@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>What the does my meeting cost dot com</title>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body class="container">
+    <div class="row">
+      <h1>How much will this meeting cost?</h1>
+    </div>
+    <div class="row panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+              Configuration options
+            </a>
+          </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+          <div class="panel-body">
+
+            <div class="col-lg-4">
+              <input type="number" class="form-control " id="peoplecount" value="2">
+              <span class="help-block">How many attendees will be at the meeting?</span>
+            </div>
+            <div class="col-lg-4">
+              <select id="hourlyrate" class="form-control">
+                <option value="50">50</option>
+                <option value="60">60</option>
+                <option value="70">70</option>
+                <option value="80">80</option>
+                <option value="90">90</option>
+                <option value="100">100</option>
+                <option value="110">110</option>
+                <option value="120" selected>120</option>
+                <option value="130">130</option>
+                <option value="140">140</option>
+                <option value="150">150</option>
+                <option value="160">160</option>
+                <option value="170">170</option>
+                <option value="180">180</option>
+                <option value="129">190</option>
+                <option value="200">200</option>
+              </select>
+              <span class="help-block">The avg hourly rate of the attendees?</span>
+            </div>
+            <div class="col-lg-4">
+              <button type="button" class="start btn btn-success">Start</button>
+              <button type="button" class="stop btn btn-danger">Stop</button>
+              <button type="button" class="reset btn btn-default">Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="info row">
+      <div class="params .col-md-12">
+        <span>With </span>
+        <span class="people"></span>
+        <span>&nbsp;people</span>
+        <span class="times">@<span>
+        <span class="hourly"></span>
+        <span>dollars per hour, this meeting has cost a total of</span>
+      </div>
+    </div>
+    <div class="dollars row">
+      <div class="wrapper well .col-md-12 value"></div>
+    </div>
+    <div class="total_time row">
+      <div class=".col-md-12">
+        <span class="pre">and wasted a grand total of </span>
+        <span class="value"></span>
+        <span class="post">you all could have spent doing anything else.</span>
+      </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <!-- inclulde local js -->
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
